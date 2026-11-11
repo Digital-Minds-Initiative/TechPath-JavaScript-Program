@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 1.2</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 1.2: المتغيرات والأنواع</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة.</p>
+  <ol>
+      <li><code>introduce(name, year)</code> ترجع جملة بقالب نص. مثال: <code>introduce("مازن", 3)</code> ترجع <code>"أنا مازن، في السنة 3"</code>.</li>
+      <li><code>addStrings(a, b)</code> تستقبل رقمين على شكل نصوص وترجع مجموعهم كرقم. مثال: <code>addStrings("5", "3")</code> ترجع <code>8</code>.</li>
+      <li><code>describe(value)</code> ترجع نوع القيمة. مثال: <code>describe(42)</code> ترجع <code>"number"</code>.</li>
+  </ol>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>
