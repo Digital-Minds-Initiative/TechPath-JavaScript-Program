@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 1.3</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 1.3: المقارنة والشروط</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة.</p>
+  <ol>
+      <li><code>gradeFor(score)</code> ترجع <code>"ممتاز"</code> من 90 وفوق، و<code>"جيد"</code> من 70 إلى 89، و<code>"يحتاج مراجعة"</code> لأقل من 70.</li>
+      <li><code>displayName(nickname)</code> ترجع ال nickname، أو <code>"زائر"</code> إذا كان نص فاضي أو <code>null</code>.</li>
+      <li><code>starsOrZero(stars)</code> ترجع عدد النجوم، أو <code>0</code> إذا كانت القيمة <code>null</code> أو <code>undefined</code>. والصفر يبقى صفر.</li>
+  </ol>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>
