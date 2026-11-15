@@ -15,12 +15,13 @@
   <script src="check.js" defer></script>
 </head>
 <body>
-  <h1>تمرين 1.4: الدوال</h1>
+  <h1>تمرين 1.4: التكرار</h1>
   <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة.</p>
   <ol>
-      <li>اكتب <code>fullName(first, last)</code> كدالة عادية (<code>function</code>)، ترجع الاسمين بينهم مسافة.</li>
-      <li>اكتب <code>isEven</code> كدالة سهمية (<code>=&gt;</code>) ترجع <code>true</code> للرقم الزوجي و<code>false</code> للفردي.</li>
-      <li>اكتب <code>applyTwice(fn, value)</code>: تشغّل الدالة <code>fn</code> على القيمة مرتين وترجع النتيجة. مثال: <code>applyTwice((n) =&gt; n + 3, 1)</code> ترجع <code>7</code>.</li>
+      <li><code>sumTo(n)</code> ترجع مجموع الأعداد من 1 إلى <code>n</code>. مثلًا <code>sumTo(4)</code> ترجع <code>10</code>.</li>
+      <li><code>countEven(n)</code> ترجع كم عدد زوجي من 1 إلى <code>n</code>. العدد زوجي إذا <code>i % 2 === 0</code>.</li>
+      <li><code>stars(n)</code> ترجع نص فيه <code>n</code> نجمة: <code>stars(3)</code> ترجع <code>"★★★"</code>.</li>
+      <li><code>firstSquareOver(limit)</code> ترجع أول عدد مربعه أكبر من <code>limit</code>. مثلًا <code>firstSquareOver(50)</code> ترجع <code>8</code>.</li>
   </ol>
   <p>النتيجة: <span id="result">…</span></p>
 </body>

@@ -23,10 +23,17 @@ function report() {
   box.className = passed === results.length ? "pass" : "fail";
 }
 
-check("fullName", () => fullName("مازن", "الغامدي"), "مازن الغامدي");
-check("isEven(4)", () => isEven(4), true);
-check("isEven(7)", () => isEven(7), false);
-check("isEven مكتوبة كدالة سهمية", () => typeof isEven === "function" && !("prototype" in isEven), true);
-check("applyTwice مع رقم", () => applyTwice((n) => n + 3, 1), 7);
-check("applyTwice مع نص", () => applyTwice((s) => s + "!", "هلا"), "هلا!!");
+check("sumTo(4)", () => sumTo(4), 10);
+check("sumTo(1)", () => sumTo(1), 1);
+check("sumTo(0)", () => sumTo(0), 0);
+check("sumTo(100)", () => sumTo(100), 5050);
+check("countEven(10)", () => countEven(10), 5);
+check("countEven(7)", () => countEven(7), 3);
+check("countEven(1)", () => countEven(1), 0);
+check("stars(3)", () => stars(3), "★★★");
+check("stars(1)", () => stars(1), "★");
+check("stars(0) نص فاضي", () => stars(0), "");
+check("firstSquareOver(50)", () => firstSquareOver(50), 8);
+check("firstSquareOver(64) لازم أكبر مو يساوي", () => firstSquareOver(64), 9);
+check("firstSquareOver(0)", () => firstSquareOver(0), 1);
 report();

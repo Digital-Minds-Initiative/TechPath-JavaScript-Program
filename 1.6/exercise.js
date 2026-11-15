@@ -1,21 +1,18 @@
-const user = {
-  name: "سارة",
-  followers: 120,
-  skills: ["HTML", "CSS"],
-};
+const repos = [
+  { name: "portfolio", stars: 12 },
+  { name: "dev-card", stars: 48 },
+  { name: "todo-app", stars: 75 },
+  { name: "weather", stars: 130 },
+];
 
-function summary(person) {
+function repoNames(list) {
   // اكتب هنا
 }
 
-function withCity(person, city) {
+function popular(list) {
   // اكتب هنا
 }
 
-function toJSONText(obj) {
-  // اكتب هنا
-}
-
-function fromJSONText(text) {
+function totalStars(list) {
   // اكتب هنا
 }

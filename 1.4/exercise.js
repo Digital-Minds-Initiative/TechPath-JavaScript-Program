@@ -1,7 +1,15 @@
-// المهمة الأولى: دالة عادية
+function sumTo(n) {
+  // اكتب هنا
+}
 
+function countEven(n) {
+  // اكتب هنا
+}
 
-// المهمة الثانية: دالة سهمية
+function stars(n) {
+  // اكتب هنا
+}
 
-
-// المهمة الثالثة: دالة تستقبل دالة
+function firstSquareOver(limit) {
+  // اكتب هنا
+}

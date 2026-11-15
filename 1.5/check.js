@@ -23,10 +23,10 @@ function report() {
   box.className = passed === results.length ? "pass" : "fail";
 }
 
-const original = JSON.stringify(repos);
-check("repoNames", () => repoNames(repos), ["portfolio", "dev-card", "todo-app", "weather"]);
-check("popular", () => popular(repos), [{ name: "todo-app", stars: 75 }, { name: "weather", stars: 130 }]);
-check("totalStars", () => totalStars(repos), 265);
-check("totalStars لمصفوفة فاضية", () => totalStars([]), 0);
-check("المصفوفة الأصلية ما تغيّرت", () => Array.isArray(popular(repos)) && JSON.stringify(repos) === original, true);
+check("fullName", () => fullName("مازن", "الغامدي"), "مازن الغامدي");
+check("isEven(4)", () => isEven(4), true);
+check("isEven(7)", () => isEven(7), false);
+check("isEven مكتوبة كدالة سهمية", () => typeof isEven === "function" && !("prototype" in isEven), true);
+check("applyTwice مع رقم", () => applyTwice((n) => n + 3, 1), 7);
+check("applyTwice مع نص", () => applyTwice((s) => s + "!", "هلا"), "هلا!!");
 report();

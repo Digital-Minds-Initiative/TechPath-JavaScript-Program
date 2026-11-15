@@ -1,18 +1,7 @@
-const repos = [
-  { name: "portfolio", stars: 12 },
-  { name: "dev-card", stars: 48 },
-  { name: "todo-app", stars: 75 },
-  { name: "weather", stars: 130 },
-];
+// المهمة الأولى: دالة عادية
 
-function repoNames(list) {
-  // اكتب هنا
-}
 
-function popular(list) {
-  // اكتب هنا
-}
+// المهمة الثانية: دالة سهمية
 
-function totalStars(list) {
-  // اكتب هنا
-}
+
+// المهمة الثالثة: دالة تستقبل دالة

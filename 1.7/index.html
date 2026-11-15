@@ -15,14 +15,13 @@
   <script src="check.js" defer></script>
 </head>
 <body>
-  <h1>تمرين 1.7: صيد الأخطاء</h1>
+  <h1>تمرين 1.7: الكائنات و JSON</h1>
   <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة.</p>
   <ol>
-      <li>الصفحة لازم تعرض مجموع نجوم المستودعات تحت. في الكود ثلاث أخطاء: واحد <code>ReferenceError</code>، وواحد <code>TypeError</code>، وواحد بدون أي رسالة خطأ (النتيجة غلط).</li>
-      <li>لاقِ الثلاثة وصلّحهم. استخدم ال Console، وحط نقطة توقف وحدة على الأقل في تبويب Sources.</li>
-      <li>لا تكتب الكود من جديد: عدّل الأخطاء بس.</li>
+      <li><code>summary(user)</code> ترجع جملة بالشكل <code>"سارة: 120 متابع"</code>. استخدم التفكيك.</li>
+      <li><code>withCity(user, city)</code> ترجع <strong>نسخة جديدة</strong> فيها خاصية <code>city</code>، بدون ما تغيّر الكائن الأصلي. استخدم النشر.</li>
+      <li><code>toJSONText(obj)</code> تحوّل الكائن لنص JSON، و<code>fromJSONText(text)</code> ترجعه كائن.</li>
   </ol>
-  <p>مجموع النجوم: <strong id="total-output">؟</strong></p>
   <p>النتيجة: <span id="result">…</span></p>
 </body>
 </html>
