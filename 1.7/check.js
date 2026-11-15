@@ -23,6 +23,14 @@ function report() {
   box.className = passed === results.length ? "pass" : "fail";
 }
 
-check("totalStars ترجع المجموع الصحيح", () => totalStars(repos), 190);
-check("الصفحة تعرض المجموع", () => document.querySelector("#total-output").textContent, "190");
+check("summary", () => summary(user), "سارة: 120 متابع");
+check("withCity تضيف المدينة", () => withCity(user, "جدة").city, "جدة");
+check("withCity تحتفظ بالباقي", () => withCity(user, "جدة").followers, 120);
+check("withCity ترجع كائن جديد", () => {
+  const result = withCity(user, "جدة");
+  return typeof result === "object" && result !== null && result !== user;
+}, true);
+check("الكائن الأصلي ما تغيّر", () => withCity(user, "جدة")?.city === "جدة" && !("city" in user), true);
+check("toJSONText", () => toJSONText({ a: 1, b: [2, 3] }), '{"a":1,"b":[2,3]}');
+check("fromJSONText", () => fromJSONText('{"a":1,"b":[2,3]}'), { a: 1, b: [2, 3] });
 report();

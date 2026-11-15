@@ -1,21 +1,18 @@
-const user = {
-  name: "سارة",
-  followers: 120,
-  skills: ["HTML", "CSS"],
-};
+const repos = [
+  { name: "portfolio", stars: 12 },
+  { name: "dev-card", stars: 48 },
+  { name: "todo-app", stars: 75 },
+  { name: "weather", stars: 130 },
+];
 
-function summary({ name, followers }) {
-  return `${name}: ${followers} متابع`;
+function repoNames(list) {
+  return list.map((repo) => repo.name);
 }
 
-function withCity(person, city) {
-  return { ...person, city };
+function popular(list) {
+  return list.filter((repo) => repo.stars > 50);
 }
 
-function toJSONText(obj) {
-  return JSON.stringify(obj);
-}
-
-function fromJSONText(text) {
-  return JSON.parse(text);
+function totalStars(list) {
+  return list.reduce((sum, repo) => sum + repo.stars, 0);
 }

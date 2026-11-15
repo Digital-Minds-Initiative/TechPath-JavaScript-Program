@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 3.2</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+    .playground { border: 2px dashed #358b9a; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 3.2: جلب البيانات بـ fetch وawait</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة. ملف التحقق يجرّب حلك على العناصر الي في المربع تحت.</p>
+  <ol>
+      <li><code>getUser(username)</code> ترجع كائن المستخدم من <code>https://api.github.com/users/</code> وبعده اسم المستخدم.</li>
+      <li><code>getStatus(url)</code> ترسل طلب للرابط وترجع رقم الحالة بس.</li>
+  </ol>
+  <div class="playground">
+    <p>هذا التمرين ما يحتاج عناصر في الصفحة. تابع النتائج في ال Console.</p>
+  </div>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>

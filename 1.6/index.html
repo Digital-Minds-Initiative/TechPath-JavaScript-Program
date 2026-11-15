@@ -15,12 +15,13 @@
   <script src="check.js" defer></script>
 </head>
 <body>
-  <h1>تمرين 1.6: الكائنات و JSON</h1>
+  <h1>تمرين 1.6: المصفوفات</h1>
   <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة.</p>
   <ol>
-      <li><code>summary(user)</code> ترجع جملة بالشكل <code>"سارة: 120 متابع"</code>. استخدم التفكيك.</li>
-      <li><code>withCity(user, city)</code> ترجع <strong>نسخة جديدة</strong> فيها خاصية <code>city</code>، بدون ما تغيّر الكائن الأصلي. استخدم النشر.</li>
-      <li><code>toJSONText(obj)</code> تحوّل الكائن لنص JSON، و<code>fromJSONText(text)</code> ترجعه كائن.</li>
+      <li><code>repoNames(repos)</code> ترجع مصفوفة فيها الأسماء بس، باستخدام <code>map</code>.</li>
+      <li><code>popular(repos)</code> ترجع المستودعات الي نجومها أكثر من 50، باستخدام <code>filter</code>.</li>
+      <li><code>totalStars(repos)</code> ترجع مجموع النجوم، باستخدام <code>reduce</code>.</li>
+      <li>لا تغيّر المصفوفة الأصلية.</li>
   </ol>
   <p>النتيجة: <span id="result">…</span></p>
 </body>

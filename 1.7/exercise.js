@@ -1,16 +1,21 @@
-const repos = [
-  { name: "portfolio", stars: 12 },
-  { name: "dev-card", stars: 48 },
-  { name: "weather", stars: 130 },
-];
+const user = {
+  name: "سارة",
+  followers: 120,
+  skills: ["HTML", "CSS"],
+};
 
-function totalStars(list) {
-  let total = 0;
-  for (const repo of list) {
-    total = total + repo.stars;
-  }
-  return total;
+function summary({ name, followers }) {
+  return `${name}: ${followers} متابع`;
 }
 
-const output = document.querySelector("#total-output");
-output.textContent = totalStars(repos);
+function withCity(person, city) {
+  return { ...person, city };
+}
+
+function toJSONText(obj) {
+  return JSON.stringify(obj);
+}
+
+function fromJSONText(text) {
+  return JSON.parse(text);
+}

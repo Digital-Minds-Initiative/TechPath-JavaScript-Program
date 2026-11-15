@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 2.5</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+    .playground { border: 2px dashed #358b9a; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    #tasks li { cursor: pointer; }
+    .done { text-decoration: line-through; opacity: .6; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 2.5: الحالة وإعادة العرض</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة. ملف التحقق يجرّب حلك على العناصر الي في المربع تحت.</p>
+  <ol>
+      <li><code>loadTasks()</code> ترجّع المهام المحفوظة بالمفتاح <code>"techpath-tasks"</code>، أو <code>[]</code> إذا ما فيه شيء.</li>
+      <li><code>saveTasks()</code> تحفظ <code>tasks</code> بنفس المفتاح.</li>
+      <li><code>render()</code> تعرض كل مهمة في <code>li</code> داخل <code>#tasks</code>، مع الكلاس <code>done</code> للمنجزة، وتكتب في <code>#remaining</code> "المتبقي: " وعدد غير المنجزة.</li>
+      <li><code>addTask(text)</code> تضيف <code>{ text, done: false }</code>، وتحفظ، وتعرض.</li>
+      <li><code>toggleTask(index)</code> تقلب <code>done</code> للمهمة رقم <code>index</code>، وتحفظ، وتعرض.</li>
+  </ol>
+  <div class="playground">
+    <form id="task-form">
+      <label for="task">مهمة جديدة</label>
+      <input id="task" name="task">
+      <button>إضافة</button>
+    </form>
+    <ul id="tasks"></ul>
+    <p id="remaining"></p>
+    <p class="note">اضغط على أي مهمة عشان تقلبها منجزة أو لا.</p>
+  </div>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>

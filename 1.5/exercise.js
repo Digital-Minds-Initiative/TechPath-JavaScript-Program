@@ -1,18 +1,9 @@
-const repos = [
-  { name: "portfolio", stars: 12 },
-  { name: "dev-card", stars: 48 },
-  { name: "todo-app", stars: 75 },
-  { name: "weather", stars: 130 },
-];
-
-function repoNames(list) {
-  return list.map((repo) => repo.name);
+function fullName(first, last) {
+  return `${first} ${last}`;
 }
 
-function popular(list) {
-  return list.filter((repo) => repo.stars > 50);
-}
+const isEven = (n) => n % 2 === 0;
 
-function totalStars(list) {
-  return list.reduce((sum, repo) => sum + repo.stars, 0);
+function applyTwice(fn, value) {
+  return fn(fn(value));
 }

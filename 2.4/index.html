@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 2.4</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+    .playground { border: 2px dashed #358b9a; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .error { color: #b3261e; }
+    [aria-invalid="true"] { border: 2px solid #b3261e; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 2.4: النماذج بـ JavaScript</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة. ملف التحقق يجرّب حلك على العناصر الي في المربع تحت.</p>
+  <ol>
+      <li><code>validateUsername(value)</code> ترجّع <code>""</code> للقيمة السليمة، و"اكتب اسم المستخدم" للفاضية، و"اسم المستخدم لازم يكون 3 حروف أو أكثر" للأقصر من 3.</li>
+      <li><code>setupForm()</code>: عند إرسال <code>#signup</code> ما تنعاد الصفحة. إذا فيه خطأ: الرسالة في <code>#username-error</code> و<code>aria-invalid="true"</code> على الحقل. وإذا ما فيه: "تم التسجيل باسم" والاسم في <code>#signup-result</code>، وتنشال <code>aria-invalid</code>.</li>
+  </ol>
+  <div class="playground">
+    <form id="signup" novalidate>
+      <label for="username">اسم المستخدم</label>
+      <input id="username" name="username" aria-describedby="username-error">
+      <p id="username-error" class="error" aria-live="polite"></p>
+      <button>تسجيل</button>
+    </form>
+    <p id="signup-result"></p>
+  </div>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>

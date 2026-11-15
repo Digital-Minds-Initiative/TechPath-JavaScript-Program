@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرين 2.1</title>
+  <style>
+    body { font-family: Tahoma, sans-serif; max-width: 44rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.8; color: #13292e; }
+    code { direction: ltr; unicode-bidi: isolate; background: #edf3f3; padding: 0 .3rem; border-radius: 4px; }
+    #result { font-weight: bold; font-size: 1.4rem; direction: ltr; display: inline-block; }
+    .pass { color: #1f7a3a; } .fail { color: #b3261e; }
+    .note { background: #f6f0e2; padding: .5rem 1rem; border-radius: 6px; }
+    .playground { border: 2px dashed #358b9a; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+    .active { background: #358b9a; color: white; }
+  </style>
+  <script src="exercise.js" defer></script>
+  <script src="check.js" defer></script>
+</head>
+<body>
+  <h1>تمرين 2.1: الوصول للعناصر وتعديلها</h1>
+  <p class="note">اكتب الحل في <code>exercise.js</code>، واحفظ، وافتح ال Console عشان تشوف ✓ أو ✗ لكل مهمة. ملف التحقق يجرّب حلك على العناصر الي في المربع تحت.</p>
+  <ol>
+      <li><code>setTitle(text)</code> تغيّر نص <code>#title</code> إلى <code>text</code>.</li>
+      <li><code>countSkills()</code> ترجّع عدد عناصر <code>li</code> داخل <code>#skills</code>.</li>
+      <li><code>highlightSkill(name)</code> تضيف الكلاس <code>active</code> لعنصر <code>li</code> الي نصه يساوي <code>name</code>.</li>
+      <li><code>setProfileLink(username)</code> تخلي <code>href</code> حق <code>#profile</code> يساوي <code>https://github.com/</code> وبعده <code>username</code>.</li>
+      <li><code>getMode()</code> ترجّع قيمة <code>data-mode</code> من الزر <code>#theme</code>.</li>
+  </ol>
+  <div class="playground">
+    <h2 id="title">عنوان قديم</h2>
+    <ul id="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <p><a id="profile" href="#">حسابي في GitHub</a></p>
+    <button id="theme" data-mode="dark">تبديل الوضع</button>
+  </div>
+  <p>النتيجة: <span id="result">…</span></p>
+</body>
+</html>
